@@ -1,17 +1,10 @@
-var Resource = require("../resourcefuljs.js").Resource;
+var resourcefuljs = require("../resourcefuljs.js");
+var Resource = require("../lib/resource.js");
 
-describe("Resource", function() {
+describe("ResourcefulJS", function() {
 
-    it("return instance of Resource", function() {
-        var resource = new Resource();
-
-        resource.should.be.an.instanceof(Resource);
-    });
-
-    it("constructor should set name", function() {
-        var resource = new Resource("foo");
-
-        resource.name.should.equal("foo");
+    it("should return Resource class", function() {
+        resourcefuljs.Resource.should.equal(Resource);
     });
 
 });

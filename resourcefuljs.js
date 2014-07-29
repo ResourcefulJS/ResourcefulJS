@@ -1,5 +1,3 @@
-var Resource = function (name) {
-    this.name = name;
-};
+var Resource = require("./lib/resource.js");
 
 exports.Resource = Resource;
