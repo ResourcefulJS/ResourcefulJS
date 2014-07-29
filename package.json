@@ -1,0 +1,23 @@
+{
+    "name": "resourcefuljs",
+    "version": "0.0.1",
+    "homepage": "http://resourcefuljs.org",
+    "author": "Ricki Runge <mail@rickirunge.com>",
+    "dependencies": {
+    },
+    "devDependencies": {
+        "chai": "^1.9.1",
+        "chai-as-promised": "^4.1.1",
+        "gulp": "^3.8.6",
+        "gulp-coverage": "^0.1.24",
+        "gulp-mocha": "^0.5.1",
+        "mocha": "^1.20.1",
+        "sinon": "^1.10.3",
+        "sinon-chai": "^2.5.0"
+    },
+    "main": "resourcefuljs",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/ResourcefulJS/ResourcefulJS.git"
+    }
+}
