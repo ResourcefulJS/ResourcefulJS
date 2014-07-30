@@ -1,4 +1,4 @@
-var resourcefuljs = require("../resourcefuljs.js");
+var resourcefuljs = require("../lib/resourcefuljs.js");
 var Resource = require("../lib/resource.js");
 
 describe("ResourcefulJS", function() {
