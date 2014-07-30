@@ -1,6 +1,6 @@
 {
     "name": "resourcefuljs",
-    "version": "0.0.1",
+    "version": "0.0.1-pre",
     "homepage": "http://resourcefuljs.org",
     "author": "Ricki Runge <mail@rickirunge.com>",
     "dependencies": {
