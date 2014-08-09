@@ -5,7 +5,6 @@
     "author": "Ricki Runge <mail@rickirunge.com>",
     "dependencies": {
         "lodash": "^2.4.1"
-        //sjsclass
     },
     "devDependencies": {
         "chai": "^1.9.1",
