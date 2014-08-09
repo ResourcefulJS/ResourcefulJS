@@ -1,17 +1,20 @@
-var Resource = require("../lib/resource.js");
+var Resource = require("../lib/resource");
 
 describe("Resource", function() {
 
-    it("should return instance of Resource", function() {
-        var resource = new Resource();
-
-        resource.should.be.an.instanceof(Resource);
+    it("should be a class", function() {
+        Resource.should.be.a("function");
+        Resource.prototype.constructor.should.equal(Resource);
     });
 
-    it("constructor should set name", function() {
-        var resource = new Resource("foo");
+    describe("instance", function() {
 
-        resource.name.should.equal("foo");
+        it("should be instance of Resource", function() {
+            var resource = new Resource();
+
+            resource.should.be.instanceof(Resource);
+        });
+
     });
 
 });
