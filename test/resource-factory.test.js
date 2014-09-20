@@ -3,7 +3,7 @@ var ResourceFactory = require("../lib/resource-factory");
 
 describe("ResourceFactory", function() {
 
-    describe("#Define", function() {
+    describe("#define", function() {
 
         it("should return new class with name", function() {
             var DefinedResource = ResourceFactory.define("Foo");
@@ -28,6 +28,24 @@ describe("ResourceFactory", function() {
 
                 resource.should.be.an.instanceof(Resource);
             });
+
+            describe("#get", function() {
+
+                it("should be instance of Resource", function() {
+                    var DefinedResource = ResourceFactory.define("Foo");
+
+                    DefinedResource._datastoreAdapter = {
+                        findResourceById: function(id) {
+                            return new DefinedResource();
+                        }
+                    };
+
+                    var resource = DefinedResource.get(1);
+
+                    resource.should.be.an.instanceof(DefinedResource);
+                });
+
+        });
 
         });
     });
