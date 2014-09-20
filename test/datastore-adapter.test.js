@@ -8,20 +8,12 @@ describe("DatastoreAdapter", function() {
         DatastoreAdapter.prototype.constructor.should.equal(DatastoreAdapter);
     });
 
-    describe("instance", function() {
+    it("should be subclass of Adapter", function() {
+        Object.getPrototypeOf(DatastoreAdapter.prototype).constructor.should.equal(Adapter);
+    });
 
-        it("should be instance of DatastoreAdapter", function() {
-            var adapter = new DatastoreAdapter();
-
-            adapter.should.be.instanceof(DatastoreAdapter);
-        });
-
-        it("should be instance of Adapter", function() {
-            var adapter = new DatastoreAdapter();
-
-            adapter.should.be.instanceof(Adapter);
-        });
-
+    it("new operator should throw error", function() {
+        DatastoreAdapter.should.throw(Error);
     });
 
 });

@@ -8,20 +8,12 @@ describe("HttpAdapter", function() {
         HttpAdapter.prototype.constructor.should.equal(HttpAdapter);
     });
 
-    describe("instance", function() {
+    it("should be subclass of Adapter", function() {
+        Object.getPrototypeOf(HttpAdapter.prototype).constructor.should.equal(Adapter);
+    });
 
-        it("should be instance of HttpAdapter", function() {
-            var adapter = new HttpAdapter();
-
-            adapter.should.be.instanceof(HttpAdapter);
-        });
-
-        it("should be instance of Adapter", function() {
-            var adapter = new HttpAdapter();
-
-            adapter.should.be.instanceof(Adapter);
-        });
-
+    it("new operator should throw error", function() {
+        HttpAdapter.should.throw(Error);
     });
 
 });

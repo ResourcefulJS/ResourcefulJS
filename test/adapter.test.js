@@ -7,14 +7,8 @@ describe("Adapter", function() {
         Adapter.prototype.constructor.should.equal(Adapter);
     });
 
-    describe("instance", function() {
-
-        it("should be instance of Adapter", function() {
-            var adapter = new Adapter();
-
-            adapter.should.be.instanceof(Adapter);
-        });
-
+    it("new operator should throw error", function() {
+        Adapter.should.throw(Error);
     });
 
 });
