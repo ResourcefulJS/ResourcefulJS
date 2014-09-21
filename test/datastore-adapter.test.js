@@ -1,4 +1,4 @@
-var Adapter = require("../lib/adapter");
+var PersistenceAdapter = require("../lib/persistence-adapter");
 var DatastoreAdapter = require("../lib/datastore-adapter");
 
 describe("DatastoreAdapter", function() {
@@ -8,8 +8,8 @@ describe("DatastoreAdapter", function() {
         DatastoreAdapter.prototype.constructor.should.equal(DatastoreAdapter);
     });
 
-    it("should be subclass of Adapter", function() {
-        Object.getPrototypeOf(DatastoreAdapter.prototype).constructor.should.equal(Adapter);
+    it("should be subclass of PersistenceAdapter", function() {
+        Object.getPrototypeOf(DatastoreAdapter.prototype).constructor.should.equal(PersistenceAdapter);
     });
 
     it("new operator should throw error", function() {

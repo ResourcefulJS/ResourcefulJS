@@ -1,7 +1,7 @@
 var resourcefuljs = require("../lib/resourcefuljs");
 var Resource = require("../lib/resource");
 var DatastoreAdapter = require("../lib/datastore-adapter");
-var HttpAdapter = require("../lib/http-adapter");
+var HttpServerAdapter = require("../lib/http-server-adapter");
 
 describe("ResourcefulJS", function() {
 
@@ -13,8 +13,8 @@ describe("ResourcefulJS", function() {
         resourcefuljs.DatastoreAdapter.should.equal(DatastoreAdapter);
     });
 
-    it("should return HttpAdapter class", function() {
-        resourcefuljs.HttpAdapter.should.equal(HttpAdapter);
+    it("should return HttpServerAdapter class", function() {
+        resourcefuljs.HttpServerAdapter.should.equal(HttpServerAdapter);
     });
 
 });
