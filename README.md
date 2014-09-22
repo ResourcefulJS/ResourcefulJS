@@ -1,7 +1,7 @@
 ResourcefulJS
 =============
 
-Tagline: "Define your resources and it will do the REST"
+Vision: "Define your resources and it will do the REST"
 
 This project i still in very much pre-alpha.
 
