@@ -1,6 +1,8 @@
 ResourcefulJS
 =============
 
+Tagline: "Define your resources and it will do the REST"
+
 This project i still in very much pre-alpha.
 
 The idea is to create at simple lightweight framework, to get a RESTful server up an running with as little effort as possible. 
